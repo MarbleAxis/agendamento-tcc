@@ -1,0 +1,25 @@
+#img-login{
+    background-image: url('../imagens/img-login.jpg');
+    background-size: cover;
+}
+
+#img-cadastro{
+    background-image: url('../imagens/img-cadastro.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#img-empresa{
+    background-image: url('../imagens/img-empresa.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#img-avatar {
+    width: 32px;
+    max-width: 32px;
+    height: 32px;
+    max-height: 32px;
+    object-fit: cover;
+    object-position: center;
+}

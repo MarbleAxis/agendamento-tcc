@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+const app = require('../app');
+
+const HOST = "localhost";
+const PORT = 2000;
+
+const server = app.listen(PORT, () => {
+    console.log("Servidor iniciado!");
+});

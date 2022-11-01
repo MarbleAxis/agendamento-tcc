@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sistema de Agendamentos</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/main.css">
+        {% block css %}
+        {% endblock %}
+    </head>
+    <body>
+
+        <div class="container-fluid">
+            <div class="row vh-100">
+
+                <div class="col-auto col-md-2 d-flex flex-column flex-shrink-0 p-1 p-md-3 pt-3 bg-light shadow h-100">
+                    <a href="/" class="d-flex align-items-center mb-0 mx-auto link-dark text-decoration-none">
+                        <span class="fs-4">
+                            <i class="bi-clock-history mx-0 me-md-3"></i>
+                            <span class="d-none d-md-inline">SAS&T</span>
+                        </span>
+                    </a>
+                    <hr>
+
+                    {% block sidebar %}
+                        TO-DO
+                    {% endblock %}
+
+                </div>
+
+                <div class="col m-0 ps-md-3 pt-3 mh-100 overflow-auto">
+                    {% block main %}
+                        TO-DO
+                    {% endblock %}
+                </div>
+
+            </div>
+        </div>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        {% block js %}
+        {% endblock %}
+        
+    </body>
+</html>

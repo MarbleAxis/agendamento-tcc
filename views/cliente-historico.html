@@ -1,0 +1,381 @@
+{% extends "cliente-template.html" %}
+
+{% block css %}
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/historico.css" rel="stylesheet">
+{% endblock %}
+
+
+{% block main %}
+<div class="idance">
+  <div class="schedule content-block">
+    <div class="container">
+      <div class="row align-items-center" style="margin-top: 1%;">
+        <div class="col-md-6">
+            <div class="mb-3">
+                <h1 class="card-title" style="margin-left: 4%;">Histórico</h1>
+            </div>
+        </div>
+      </div>
+    
+      <div class="timetable">
+
+        <nav class="nav nav-pills nav-tabs" id="pills-tab" role="tablist">
+            <a class="nav-link active" id="pills-seg-tab" data-toggle="pill" href="#pills-seg" role="tab" aria-controls="pills-home" aria-selected="true">Seg</a>
+            <a class="nav-link" id="pills-ter-tab" data-toggle="pill" href="#pills-ter" role="tab" aria-controls="pills-seg" aria-selected="false">Ter</a>
+            <a class="nav-link" id="pills-qua-tab" data-toggle="pill" href="#pills-qua" role="tab" aria-controls="pills-ter" aria-selected="false">Qua</a>
+            <a class="nav-link" id="pills-qui-tab" data-toggle="pill" href="#pills-qui" role="tab" aria-controls="pills-qua" aria-selected="false">Qui</a>
+            <a class="nav-link" id="pills-sex-tab" data-toggle="pill" href="#pills-sex" role="tab" aria-controls="pills-qui" aria-selected="false">Sex</a>
+            <a class="nav-link" id="pills-sab-tab" data-toggle="pill" href="#pills-sab" role="tab" aria-controls="pills-sex" aria-selected="false">Sab</a>
+            <a class="nav-link" id="pills-dom-tab" data-toggle="pill" href="#pills-dom" role="tab" aria-controls="pills-sab" aria-selected="false">Dom</a>
+        </nav>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-seg" role="tabpanel" aria-labelledby="pills-sex-tab">
+            <div class="tab-content">
+            <div class="tab-pane show active">
+              <div class="row">
+        
+                <!-- Schedule Item 1 -->
+                <div class="col-md-6">
+                  <div class="timetable-item">
+                    <div class="timetable-item-main">
+                      <div class="timetable-item-time">4:00pm - 5:00pm</div>
+                      <div class="timetable-item-name">Dentista</div>
+                      <a href="#" class="btn btn-primary btn-book">Mostrar</a>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- Schedule Item 2 -->
+                <div class="col-md-6">
+                  <div class="timetable-item">
+                    <div class="timetable-item-main">
+                      <div class="timetable-item-time">5:00pm - 6:00pm</div>
+                      <div class="timetable-item-name">Reunião</div>
+                      <a href="#" class="btn btn-primary btn-book">Mostrar</a>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- Schedule Item 3 -->
+                <div class="col-md-6">
+                  <div class="timetable-item">
+                    <div class="timetable-item-main">
+                      <div class="timetable-item-time">5:00pm - 6:00pm</div>
+                      <div class="timetable-item-name">Unhas</div>
+                      <a href="#" class="btn btn-primary btn-book">Mostrar</a>
+                    </div>
+                  </div>
+                </div>
+        
+                <!-- Schedule Item 4 -->
+                <div class="col-md-6">
+                  <div class="timetable-item">
+                    <div class="timetable-item-main">
+                      <div class="timetable-item-time">7:00pm - 8:00pm</div>
+                      <div class="timetable-item-name">Yoga</div>
+                      <a href="#" class="btn btn-primary btn-book">Mostrar</a>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- Schedule Item 5 -->
+                <div class="col-md-6">
+                  <div class="timetable-item">
+                    <div class="timetable-item-main">
+                      <div class="timetable-item-time">6:00pm - 7:00pm</div>
+                      <div class="timetable-item-name">Fisioterapia</div>
+                      <a href="#" class="btn btn-primary btn-book">Mostrar</a>
+                    </div>
+                  </div>
+                </div>
+        
+                <!-- Schedule Item 6 -->
+                <div class="col-md-6">
+                  <div class="timetable-item">
+                    <div class="timetable-item-main">
+                      <div class="timetable-item-time">8:00pm - 9:00pm</div>
+                      <div class="timetable-item-name">Nutricionista</div>
+                      <a href="#" class="btn btn-primary btn-book">Mostrar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-ter" role="tabpanel" aria-labelledby="pills-ter-tab">
+            <div class="tab-content">
+              <div class="tab-pane show active">
+                <div class="row">
+          
+                  <!-- Schedule Item 1 -->
+                  <div class="col-md-6">
+                    <div class="timetable-item">
+                      <div class="timetable-item-main">
+                        <div class="timetable-item-time">4:00pm - 5:00pm</div>
+                        <div class="timetable-item-name">Dentista</div>
+                        <a href="#" class="btn btn-primary btn-book">Mostrar</a>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- Schedule Item 2 -->
+                  <div class="col-md-6">
+                    <div class="timetable-item">
+                      <div class="timetable-item-main">
+                        <div class="timetable-item-time">5:00pm - 6:00pm</div>
+                        <div class="timetable-item-name">Reunião</div>
+                        <a href="#" class="btn btn-primary btn-book">Mostrar</a>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- Schedule Item 3 -->
+                  <div class="col-md-6">
+                    <div class="timetable-item">
+                      <div class="timetable-item-main">
+                        <div class="timetable-item-time">5:00pm - 6:00pm</div>
+                        <div class="timetable-item-name">Unhas</div>
+                        <a href="#" class="btn btn-primary btn-book">Mostrar</a>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- Schedule Item 4 -->
+                  <div class="col-md-6">
+                    <div class="timetable-item">
+                      <div class="timetable-item-main">
+                        <div class="timetable-item-time">7:00pm - 8:00pm</div>
+                        <div class="timetable-item-name">Limpeza Facial</div>
+                        <a href="#" class="btn btn-primary btn-book">Mostrar</a>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- Schedule Item 5 -->
+                  <div class="col-md-6">
+                    <div class="timetable-item">
+                      <div class="timetable-item-main">
+                        <div class="timetable-item-time">6:00pm - 7:00pm</div>
+                        <div class="timetable-item-name">Fisioterapia</div>
+                        <a href="#" class="btn btn-primary btn-book">Mostrar</a>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- Schedule Item 6 -->
+                  <div class="col-md-6">
+                    <div class="timetable-item">
+                      <div class="timetable-item-main">
+                        <div class="timetable-item-time">8:00pm - 9:00pm</div>
+                        <div class="timetable-item-name">Pediatra</div>
+                        <a href="#" class="btn btn-primary btn-book">Mostrar</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-qua" role="tabpanel" aria-labelledby="pills-qua-tab">
+            <div class="tab-content">
+              <div class="tab-pane show active">
+                <div class="row">
+          
+                  <!-- Schedule Item 1 -->
+                  <div class="col-md-6">
+                    <div class="timetable-item">
+                      <div class="timetable-item-main">
+                        <div class="timetable-item-time">4:00pm - 5:00pm</div>
+                        <div class="timetable-item-name">Dentista</div>
+                        <a href="#" class="btn btn-primary btn-book">Mostrar</a>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- Schedule Item 2 -->
+                  <div class="col-md-6">
+                    <div class="timetable-item">
+                      <div class="timetable-item-main">
+                        <div class="timetable-item-time">5:00pm - 6:00pm</div>
+                        <div class="timetable-item-name">Reunião</div>
+                        <a href="#" class="btn btn-primary btn-book">Mostrar</a>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- Schedule Item 3 -->
+                  <div class="col-md-6">
+                    <div class="timetable-item">
+                      <div class="timetable-item-main">
+                        <div class="timetable-item-time">5:00pm - 6:00pm</div>
+                        <div class="timetable-item-name">Unhas</div>
+                        <a href="#" class="btn btn-primary btn-book">Mostrar</a>
+                      </div>
+                    </div>
+                  </div>                            
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-qui" role="tabpanel" aria-labelledby="pills-qui-tab">
+            <div class="tab-content">
+              <div class="tab-pane show active">
+                <div class="row">
+          
+                  <!-- Schedule Item 1 -->
+                  <div class="col-md-6">
+                    <div class="timetable-item">
+                      <div class="timetable-item-main">
+                        <div class="timetable-item-time">4:00pm - 5:00pm</div>
+                        <div class="timetable-item-name">Dentista</div>
+                        <a href="#" class="btn btn-primary btn-book">Mostrar</a>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- Schedule Item 2 -->
+                  <div class="col-md-6">
+                    <div class="timetable-item">
+                      <div class="timetable-item-main">
+                        <div class="timetable-item-time">5:00pm - 6:00pm</div>
+                        <div class="timetable-item-name">Reunião</div>
+                        <a href="#" class="btn btn-primary btn-book">Mostrar</a>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- Schedule Item 3 -->
+                  <div class="col-md-6">
+                    <div class="timetable-item">
+                      <div class="timetable-item-main">
+                        <div class="timetable-item-time">5:00pm - 6:00pm</div>
+                        <div class="timetable-item-name">Unhas</div>
+                        <a href="#" class="btn btn-primary btn-book">Mostrar</a>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- Schedule Item 4 -->
+                  <div class="col-md-6">
+                    <div class="timetable-item">
+                      <div class="timetable-item-main">
+                        <div class="timetable-item-time">7:00pm - 8:00pm</div>
+                        <div class="timetable-item-name">Yoga</div>
+                        <a href="#" class="btn btn-primary btn-book">Mostrar</a>
+                      </div>
+                    </div>
+                  </div>    
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-sex" role="tabpanel" aria-labelledby="pills-sex-tab">
+            <div class="tab-content">
+              <div class="tab-pane show active">
+                <div class="row">
+          
+                  <!-- Schedule Item 1 -->
+                  <div class="col-md-6">
+                    <div class="timetable-item">
+                      <div class="timetable-item-main">
+                        <div class="timetable-item-time">4:00pm - 5:00pm</div>
+                        <div class="timetable-item-name">Dentista</div>
+                        <a href="#" class="btn btn-primary btn-book">Mostrar</a>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- Schedule Item 2 -->
+                  <div class="col-md-6">
+                    <div class="timetable-item">
+                      <div class="timetable-item-main">
+                        <div class="timetable-item-time">5:00pm - 6:00pm</div>
+                        <div class="timetable-item-name">Reunião</div>
+                        <a href="#" class="btn btn-primary btn-book">Mostrar</a>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- Schedule Item 3 -->
+                  <div class="col-md-6">
+                    <div class="timetable-item">
+                      <div class="timetable-item-main">
+                        <div class="timetable-item-time">5:00pm - 6:00pm</div>
+                        <div class="timetable-item-name">Unhas</div>
+                        <a href="#" class="btn btn-primary btn-book">Mostrar</a>
+                      </div>
+                    </div>
+                  </div>    
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-sab" role="tabpanel" aria-labelledby="pills-sab-tab">
+            <div class="tab-content">
+              <div class="tab-pane show active">
+                <div class="row">
+          
+                  <!-- Schedule Item 1 -->
+                  <div class="col-md-6">
+                    <div class="timetable-item">
+                      <div class="timetable-item-main">
+                        <div class="timetable-item-time">4:00pm - 5:00pm</div>
+                        <div class="timetable-item-name">Dentista</div>
+                        <a href="#" class="btn btn-primary btn-book">Mostrar</a>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- Schedule Item 2 -->
+                  <div class="col-md-6">
+                    <div class="timetable-item">
+                      <div class="timetable-item-main">
+                        <div class="timetable-item-time">5:00pm - 6:00pm</div>
+                        <div class="timetable-item-name">Reunião</div>
+                        <a href="#" class="btn btn-primary btn-book">Mostrar</a>
+                      </div>
+                    </div>
+                  </div>    
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-dom" role="tabpanel" aria-labelledby="pills-dom-tab">
+            <div class="tab-content">
+              <div class="tab-pane show active">
+                <div class="row">
+          
+                  <!-- Schedule Item 1 -->
+                  <div class="col-md-6">
+                    <div class="timetable-item">
+                      <div class="timetable-item-main">
+                        <div class="timetable-item-time">Dia inteiro</div>
+                        <div class="timetable-item-name">Folga</div>
+                        <a href="#" class="btn btn-primary btn-book">Mostrar</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+
+{% block js %}
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script>
+  $('#pills-tab a').on('click', function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+  })
+</script>
+{% endblock %}

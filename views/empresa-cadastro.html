@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cadastro</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row vh-100">
+                <div class="col-6 d-none d-md-block" id="img-empresa">
+                </div>
+                <div class="col-12 col-md-4 mx-auto my-auto">                    
+                    <form method="post">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" id="email" class="form-control" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="senha" class="form-label">Senha</label>
+                            <input type="password" id="senha" class="form-control" name="senha">
+                        </div>
+                        <div class="mb-3">
+                            <label for="csenha" class="form-label">Confirmar senha</label>
+                            <input type="password" id="csenha" class="form-control" name="csenha">
+                        </div>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" id="nome" class="form-control" name="nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cnpj" class="form-label">CNPJ</label>
+                            <input type="text" id="cnpj" class="form-control" name="cnpj">
+                        </div>
+                        <div class="mb-3">
+                            <label for="tel" class="form-label">Telefone</label>
+                            <input type="text" id="tel" class="form-control" name="tel">
+                        </div>
+                        <div class="mb-3">
+                            <label for="end" class="form-label">Endereço</label>
+                            <input type="text" id="end" class="form-control" name="end">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cep" class="form-label">CEP</label>
+                            <input type="text" id="cep" class="form-control" name="cep">
+                        </div>
+                        <div class="mb-3">
+                            <label for="rua" class="form-label">Rua</label>
+                            <input type="text" id="rua" class="form-control" name="rua">
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <label for="num" class="form-label">Número</label>
+                                <input type="text" id="num" class="form-control" name="num">
+                            </div>
+                            <div class="col-6">
+                                <label for="complemento" class="form-label">Complemento</label>
+                                <input type="text" id="complemento" class="form-control" name="complemento">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="bairro" class="form-label">Bairro</label>
+                            <input type="text" id="bairro" class="form-control" name="bairro">
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <label for="cidade" class="form-label">Cidade</label>
+                                <input type="text" id="cidade" class="form-control" name="cidade">
+                            </div>
+                            <div class="col-6">
+                                <label for="estado" class="form-label">Estado</label>
+                                <select class="form-select" id="estado" name="estado">
+                                    <option selected>Selecione o estado</option>
+                                    <option value="MG">MG</option>
+                                    <option value="MG">MT</option>
+                                    <option value="MG">SP</option>
+                                    <option value="MG">AM</option>
+                                    <option value="MG">PA</option>
+                                    <option value="MG">AP</option>
+                                    <option value="MG">RO</option>
+                                    <option value="MG">AC</option>
+                                    <option value="MG">RR</option>
+                                    <option value="MG">MS</option>
+                                    <option value="MG">TO</option>
+                                    <option value="MG">RS</option>
+                                    <option value="MG">GO</option>
+                                    <option value="MG">PR</option>
+                                    <option value="MG">SC</option>  
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-auto ms-auto">
+                                <button type="submit" class="btn btn-primary w-100">Cadastrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,253 @@
+body {
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+}
+.stepup-details-holder.hour-container {
+    padding: 5px 0px!important;
+}
+.stepup-details-holder {
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 22px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.working-hours-holder ul {
+    list-style: none;
+}
+.setup-container ul {
+    list-style: none;
+}
+
+.day-label {
+    float: left;
+    width: 105.5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.day-toggle {
+    width: 58px;
+    padding: 4px 0;
+    height: 23px;
+    border-radius: 11.5px;
+    background-color: var(--turquoise);
+    float: left;
+}
+
+.slider_holder {
+    float: left;
+    overflow-x: hidden;
+    padding-left: 0;
+    position: relative;
+    width: 60px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.sliders {
+    line-height: 23px;
+    float: left;
+    width: 60px;
+    position: absolute;
+    color: #fff!important;
+    font-size: 11px!important;
+    font-weight: 800!important;
+}
+.slider_off {
+    background: url(https://assets.setmore.com/setmore/images/1.0/Icons/switch-bg.png) -57px 0 no-repeat;
+    left: 60px;
+    text-indent: 26px;
+    color: #000!important;
+}
+
+.slider_on {
+    background: url(https://storage.googleapis.com/setmore-assets/1.0/Images/Settings/switch-bg.png) 0 0 no-repeat;
+    text-indent: 10px;
+    left: 2px;
+}
+
+.slider_switch {
+    background: url(https://assets.setmore.com/setmore/images/1.0/Icons/switch-btn.png) left top no-repeat;
+    height: 24px;
+    left: 38px;
+    position: absolute;
+    width: 25px;
+}
+
+.hide, .noDisplay {
+    display: none;
+}
+.hide {
+    display: none!important;
+}
+
+.non-working-day label {
+    width: 156px;
+    height: 17px;
+    opacity: .4;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 30px;
+    letter-spacing: normal;
+    color: #394850;
+    margin-left: 9px;
+}
+label {
+    cursor: default;
+}
+#staffimageupload, .class-details-list-secondary li input[type=text], .class-list-details-holder li textarea, .service-details-list-secondary li input[type=text], .service-list-details-holder li textarea, .staff-details-list, .staff-details-list li textarea, label {
+    margin-bottom: 0;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+button, input, label, select, textarea {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.btn, input{
+    height: auto;
+    width: auto;
+}
+button, input[type=button], input[type=checkbox], input[type=radio], input[type=reset], input[type=submit], label, select {
+    cursor: pointer;
+}
+
+.business-days-list {
+    width: auto;
+    margin-left: 30%;
+}
+
+.business-hours-drpdwn-holder.fl.hour-dropdown, .non-working-day {
+    margin: 0 0 0 22px;
+    height: 30px;
+    width: auto;
+}
+.show {
+    display: block;
+}
+.fl {
+    float: left;
+}
+
+.btn-group {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+business-hours-drpdwn-holder .staff-hours-to {
+    margin: 0 5px;
+}
+
+.apply-to-all {
+    margin: 6px 6px 5px 9px;
+    display: inline-block;
+    height: 17px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: normal;
+    color: rgba(0, 0, 211, 0.706);
+    cursor: pointer;
+}
+
+
+
+.setup-day-off .day-label {
+    opacity: .5;
+}
+
+.hide, .noDisplay {
+    display: none;
+}
+.hide {
+    display: none!important;
+}
+.hide, .noDisplay {
+    display: none;
+}
+.hide {
+    display: none;
+}
+.business-hours-drpdwn-holder.fl.hour-dropdown, .non-working-day {
+    margin: 0 0 0 22px;
+    height: 30px;
+    width: auto;
+}
+
+.non-working-day {
+    width: 225px;
+    position: relative;
+    left: 15px;
+    border-radius: 16px;
+    background-color: var(--white);
+    float: left;
+    height: 22px;
+    margin: 8px 2px;
+}
+
+.dropdown, .toggle-opt, input, select, textarea {
+    padding: 6px 0 8px;
+    background-color: #fff;
+    border: solid 1px #fff;
+    height: 20px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: block;
+    position: relative;
+    font-weight: 400;
+    -webkit-transition: all .1s ease;
+    transition: all .1s ease;
+    margin: 0;
+    outline: 0!important;
+    width: 100%;
+}
+
+
+.uneditable-input, input, textarea {
+    margin-left: 0;
+}
+.uneditable-input, input, textarea {
+    width: 206px;
+}
+button, input, label, select, textarea {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+button, input {
+    line-height: normal;
+}
+button, input, select, textarea {
+    margin: 0;
+    font-size: 100%;
+    vertical-align: middle;
+}
+
+input[type="hidden" i] {
+    appearance: none;
+    background-color: initial;
+    cursor: default;
+    display: none !important;
+    padding: initial;
+    border: initial;
+}
+
+.clearfix {
+    clear: both;
+}

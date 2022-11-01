@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login</title>
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row vh-100">
+                <div class="col-6 d-none d-md-block shadow-lg" id="img-login">
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 mx-auto my-auto">                    
+                    <form method="post" action="/login">
+                        <div class="mb-3">
+                            <label for="usuario" class="form-label">Usuário</label>
+                            <input type="text" id="usuario" class="form-control" name="usuario">
+                        </div>
+                        <div class="mb-3">
+                            <label for="senha" class="form-label">Senha</label>
+                            <input type="password" id="senha" class="form-control" name="senha">
+                        </div>
+                        {% if falhou %}
+                        <div class="mb-3">
+                            <p class="text-danger">Usuário e/ou senha inválidos!</p>
+                        </div>
+                        {% endif %}
+                        <div class="row">
+                            <div class="col-12 col-md-auto ms-auto">
+                                <button type="submit" class="btn btn-primary w-100">Entrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+{% extends "template.html" %}
+
+{% block sidebar %}
+<ul class="nav nav-pills flex-column">
+    <li class="nav-item">
+        <a href="/funcionario" class="nav-link active" aria-current="page">
+            <i class="bi-house pe-none me-0 me-md-2"></i> 
+            <span class="d-none d-md-inline">Início</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a href="/agendamentos" class="nav-link link-dark aria-current="page">
+            <i class="bi-calendar-plus pe-none me-0 me-md-2"></i> 
+            <span class="d-none d-md-inline">Agendamentos</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a href="/ver-horarios" class="nav-link link-dark aria-current="page">
+            <i class="bi-clipboard2-check pe-none  me-0 me-md-2"></i> 
+            <span class="d-none d-md-inline">Ver horários</span>
+        </a>
+    </li>
+</ul>
+<hr class="mt-auto">
+<div class="dropdown w-100 pb-2 pb-md-0 ps-auto pe-auto ps-md-0">
+    <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <img id="img-avatar" class="rounded-circle border border-dark border-2 shadow-sm me-auto me-md-0" src="{{ usuario.imagem or '/imagens/avatar.png' }}">
+        <strong class="d-none d-md-inline flex-grow-1 ps-2">{{ usuario.nome }}</strong>
+    </a>
+    <ul class="dropdown-menu text-small shadow">
+        <li><a class="dropdown-item" href="#">Configurações</a></li>
+        <li><a class="dropdown-item" href="#">Perfil</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="/logout">Sair</a></li>
+    </ul>
+</div>
+{% endblock %}
+
+{% block main %}
+    Área do cliente
+{% endblock %}

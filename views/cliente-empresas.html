@@ -1,0 +1,220 @@
+{% extends "cliente-template.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/util.css">
+<style>
+    h1,h2,h3,h4,h5,h6 {
+        margin: 0px;
+    }
+    h1{
+        font-size: 1.7rem;
+    }
+
+    .search-wrap{
+        display: -webkit-box;
+    }
+
+    .limiter {
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+    }
+    
+    .container{
+        width: 100%;  
+        min-height: 100vh;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn .btn-secondary {
+        width: 100%;
+        margin-bottom: 10px
+    }
+
+    .txt2 {
+        font-size: 24px;
+        line-height: 1.0;
+        color: #666666;
+    }
+
+    
+    .wrap{
+        width: 960px;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 10%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 50px 50px 33px 35px;
+    }
+    
+    /*------------------------------------------------------------------
+    [  ]*/
+    .pic {
+        width: 316px;
+    }
+    
+    .pic img {
+        max-width: 100%;
+    }    
+    
+    /*------------------------------------------------------------------
+    [  ]*/		
+    .title {
+        font-size: 24px;
+        color: #333333;
+        line-height: 0.7;
+        text-align: center;
+    
+        width: 100%;
+        display: block;
+        padding-bottom: 34px;
+    }
+
+    .btn .btn-secondary {
+        padding: 0.5rem 1rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        border-radius: 0.3rem;
+    }  
+    /*------------------------------------------------------------------
+    [ Responsive ]*/
+    
+    
+    
+    @media (max-width: 1119px) {
+        .wrap {
+            padding: 55px 60px 33px 55px;
+        }
+    
+        .pic {
+        width: 35%;
+        }
+    
+        .box {
+        width: 50%;
+        }      
+
+        .btn .btn-secondary {
+            padding: 0.3rem 0.6rem;
+            font-size: 1.0rem;
+            line-height: 1.5;
+            border-radius: 0.3rem;
+        }  
+    }
+
+
+    @media (max-width: 768px) {
+        .wrap {
+            padding: 65px 80px 33px 80px;
+        }
+    
+        .pic {
+            display: none;
+        }
+    
+        .box {
+            width: 100%;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .wrap {
+            padding: 65px 15px 33px 15px;
+        }
+        .btn .btn-secondary {
+            padding: 0.25rem 0.5rem;
+            font-size: .875rem;
+            line-height: 1.5;
+            border-radius: 0.2rem;    
+        }
+        .txt2 {
+            font-size: 16px;
+        }
+    }
+</style>
+{% endblock %}
+
+
+{% block main %}
+<div class="limiter">
+    <div class="container mx-auto my-auto">
+        <div class="wrap mx-auto my-auto">
+            <div class="search-wrap form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar..." aria-label="Pesquisar">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="bi bi-search"></i></button>
+            </div>
+
+            <div class="box" >
+                <span class="title">
+                    <h1>Agendamentos de Horários</h1>
+                    <h5>Localize as empresas e realize agendamentos de seus serviços!</h5>
+                </span>
+                <div class="row mb-3 border-2 d-flex justify-content-around">
+                    <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">CEFET-MG Campus V</a>
+                </div>
+                <div class="row mb-3 border-2 d-flex justify-content-around">
+                        <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Divina Panela - lista casamento</a>
+                </div>
+                <div class="row mb-3 border-2 d-flex justify-content-around">
+                    <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Embeleze</a>
+                </div>
+                <div class="row mb-3 border-2 d-flex justify-content-around">
+                    <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Hospital St. Mônica</a>
+                </div>
+                <div class="row mb-3 border-2 d-flex justify-content-around">
+                    <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Clínica Evora</a>
+                </div>
+                <div class="row mb-3 border-2 d-flex justify-content-around">
+                    <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Mary Duarte Hair</a>
+                </div>
+                <div class="row mb-3 border-2 d-flex justify-content-around">
+                    <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Virginia Fonseca tatoo</a>
+                </div>
+                <div class="row mb-3 border-2 d-flex justify-content-around">
+                    <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Hospotal St. Lucia</a>
+                </div>
+                <nav aria-label="Navegação de página serviços">
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1"><i class="bi bi-chevron-double-left"></i></a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#"><i class="bi bi-chevron-double-right"></i></a>
+                      </li>
+                    </ul>
+                </nav>           
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+{% block js %}
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="js/tilt.jquery.min.js"></script>
+<script >
+    $('.js-tilt').tilt({
+        scale: 1.1
+    })
+</script>
+{% endblock %}

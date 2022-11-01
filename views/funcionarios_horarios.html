@@ -1,0 +1,96 @@
+{% extends "funcionario-template.html" %}
+
+{% block css %}
+<style>
+
+.btn{
+    width:30%;
+}
+
+
+/* Aqui a mensagem ja está com o display none para já começar escondida*/
+.feriado{
+  background-color:paleturquoise;
+  display:none;
+  position:absolute;
+  top:0;
+  left:0%;
+  right:0;
+  margin:auto;
+  width:100px;
+  height:auto;
+  border:1px solid rgb(0, 0, 0);
+}
+
+.folgas{
+  background-color:paleturquoise;
+  display:none;
+  position:absolute;
+  top:0;
+  left:0%;
+  right:0;
+  margin:auto;
+  width:100px;
+  height:auto;
+  border:1px solid rgb(0, 0, 0);
+}
+</style>
+{% endblock %}
+
+
+{% block main %}
+<div class="row mb-3 border-2 d-flex">
+    <button class="btn btn-primary btn-lg active" role="button" aria-pressed="true" type="button" onclick="showMessage()">
+        Ver datas dos feriados
+        <div class="feriado">Feriados</div>
+    </button>
+</div>
+<div class="row mb-3 border-2 d-flex">
+    <button class="btn btn-primary btn-lg active" role="button" aria-pressed="true" type="button" onclick="showMessage()">
+        Ver dias de folga
+        <div class="folgas">
+            Folgas
+            <ul>
+                <li>
+                    Natal
+                </li>
+                <li>
+                    Ano Novo
+                </li>
+                <li> 
+                    Dia dos trabalhadores
+                </li>
+            </ul>
+        </div>
+    </button>
+</div>
+{% endblock %}
+
+
+{% block js %}
+<script>
+
+//Feriados
+let feriado = document.querySelector(".feriado");
+
+let folgas = document.querySelector(".folgas");
+
+// mostra a mensagem
+
+
+function showMessage(){  
+    do{
+        feriado.style.display = "block";
+    }
+    while('.feriado') 
+};
+
+function showMessage(){  
+    do{
+        folgas.style.display = "block";
+    }
+    while('.folgas') 
+};
+
+</script>
+{% endblock %}

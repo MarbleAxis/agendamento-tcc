@@ -1,0 +1,218 @@
+{% extends "cliente-template.html" %}
+
+{% block css %}
+<style>
+.nav-link {
+    color: #4a5568;
+}
+.card {
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+}
+
+.gutters-sm {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.gutters-sm>.col, .gutters-sm>[class*=col-] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+}
+
+.bg-gray-300 {
+    background-color: #e2e8f0;
+}
+.h-100 {
+    height: 100%!important;
+}
+.shadow-none {
+    box-shadow: none!important;
+}
+</style>
+{% endblock %}
+
+
+{% block main %}
+<div class="container">
+    <div class="row gutters-sm">
+      <div class="col-md-4 d-none d-md-block">
+        <div class="card">
+          <div class="card-body">
+            <nav class="nav flex-column nav-pills nav-gap-y-1" id="pills-tab">
+              <a href="#account" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded active" id="pills-account-tab">
+                <i class="bi bi-gear"></i>
+                <span class="d-none d-md-inline">Configurações da conta</span>
+              </a>
+              <a href="#security" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded" id="pills-sercurity-tab">
+                <i class="bi bi-shield"></i>
+                <span class="d-none d-md-inline">Segurança</span>
+              </a>
+              <a href="#notification" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded" id="pills-notificatio-tab"> 
+                <i class="bi bi-bell"></i>/
+                <span class="d-none d-md-inline">Notificações</span>
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header border-bottom mb-3 d-flex d-md-none">
+            <ul class="nav nav-tabs card-header-tabs nav-gap-x-1" role="tablist">
+              <li class="nav-item">
+                <a href="#account" data-toggle="tab" class="nav-link has-icon active" id="pills-account-tab"><i class="bi bi-gear"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="#security" data-toggle="tab" class="nav-link has-icon" id="pills-sercurity-tab"><i class="bi bi-shield"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="#notification" data-toggle="tab" class="nav-link has-icon" id="pills-notification-tab"><i class="bi bi-bell"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body tab-content">
+            <div class="tab-pane active" id="account">
+              <h6>CONFIGURAÇÕES DA CONTA</h6>
+              <hr>
+              <form>
+                <div class="form-group">
+                    <label for="username">Usuário</label>
+                    <input type="text" class="form-control" id="nome" aria-describedby="nome" placeholder="Insira seu usuário">
+                </div>
+                <hr>
+                <div class="form-group">
+                  <label class="d-block text-danger">Deletar Conta</label>
+                  <p class="text-muted font-size-sm">Uma vez que você deletar sua conta, não terá como desfazer.</p>
+                </div>
+                <button class="btn btn-danger" type="button">Deletar Conta</button>
+              </form>
+            </div>
+            <div class="tab-pane" id="security">
+              <h6>CONFIGURAÇÕES DE SEGURANÇA</h6>
+              <hr>
+              <form>
+                <div class="form-group">
+                  <label class="d-block">Trocar a Senha</label>
+                  <input type="text" class="form-control" placeholder="Insira sua antiga senha">
+                  <input type="text" class="form-control mt-1" placeholder="Nova senha">
+                  <input type="text" class="form-control mt-1" placeholder="Confirmar nova senha">
+                </div>
+              </form>
+              <hr>
+              <form>
+                <div class="form-group">
+                  <label class="d-block">Autenticação de dois fatores</label>
+                  <button class="btn btn-info" type="button">Ativar autenticação de dois fatores</button>
+                  <p class="small text-muted mt-2">A autenticação de dois fatores adiciona uma maior segurança para sua conta ao requerir mais do que a senha para a realização do login.</p>
+                </div>
+              </form>
+              <hr>
+              <form>
+                <div class="form-group mb-0">
+                  <label class="d-block">Sessão</label>
+                  <p class="font-size-sm text-secondary">Esta é uma lista dos serviços que logaram na sua conta. Remova qualquer sessão da qual você não reconehça.</p>
+                  <ul class="list-group list-group-sm">
+                    <li class="list-group-item has-icon">
+                      <div>
+                        <h6 class="mb-0">Divinópolis 190.24.335.55</h6>
+                        <small class="text-muted">A sua sessão atual se encontra em Divinópolis-MG, Brasil.</small>
+                      </div>
+                      <button class="btn btn-light btn-sm ml-auto" type="button">Mais informação</button>
+                    </li>
+                  </ul>
+                </div>
+              </form>
+            </div>
+            <div class="tab-pane" id="notification">
+              <h6>CONFIGURAÇÕES DE NOTIFICAÇÃO</h6>
+              <hr>
+              <form>
+                <div class="form-group">
+                  <label class="d-block mb-0">Alerta de Segurança</label>
+                  <div class="small text-muted mb-3">Receba uma notificação de alerta via e-mail.</div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1" checked="">
+                    <label class="custom-control-label" for="customCheck1">Email toda vez em que uma vulnerabilidade seja encontrada.</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck2" checked="">
+                    <label class="custom-control-label" for="customCheck2">Email de resumo das vulnerabilidades.</label>
+                  </div>
+                </div>
+                <div class="form-group mb-0">
+                  <label class="d-block">Notificação de SMS</label>
+                  <ul class="list-group list-group-sm">
+                    <li class="list-group-item has-icon">
+                        Agendamentos
+                      <div class="custom-control custom-control-nolabel custom-switch ml-auto">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked="">
+                        <label class="custom-control-label" for="customSwitch1"></label>
+                      </div>
+                    </li>
+                    <li class="list-group-item has-icon">
+                      Atualização de horários
+                      <div class="custom-control custom-control-nolabel custom-switch ml-auto">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                        <label class="custom-control-label" for="customSwitch2"></label>
+                      </div>
+                    </li>
+                    <li class="list-group-item has-icon">
+                      Lembretes
+                      <div class="custom-control custom-control-nolabel custom-switch ml-auto">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch3" checked="">
+                        <label class="custom-control-label" for="customSwitch3"></label>
+                      </div>
+                    </li>
+                    <li class="list-group-item has-icon">
+                      Eventos
+                      <div class="custom-control custom-control-nolabel custom-switch ml-auto">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch4" checked="">
+                        <label class="custom-control-label" for="customSwitch4"></label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+{% endblock %}
+
+
+{% block js %}
+<script>
+    var triggerEl = document.querySelector('#pills-tab a[href="#account"]')
+    bootstrap.Tab.getInstance(triggerEl).show();
+
+    var triggerEl2 = document.querySelector('#securiy a[href="#security"]')
+    bootstrap.Tab.getInstance(triggerEl2).show();
+
+    var triggerEl3 = document.querySelector('#pills-tab a[href="#notification"]')
+    bootstrap.Tab.getInstance(triggerEl3).show();
+</script>
+{% endblock %}

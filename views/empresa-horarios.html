@@ -1,0 +1,231 @@
+{% extends "empresa-template.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="/css/horarios.css">
+{% endblock %}
+
+
+{% block main %}
+<!--cadastro horario de funcionamento -->
+<div class="container fit-content ">
+    <div class="row vh-100">
+        <div class="col-12">
+            <div class="stepup-business-details hour-container">
+                <div class="d-flex bd-highlight mb-3">
+                    <div class="me-auto p-2 bd-highlight"><h3 class="text-themecolor">Cadastro - Horário de funcionamento</div>           
+                </div>
+                <div class="row align-items-center" style="margin-top: 2%;">
+                    <div class="col-md-10">
+                        <div class="working-hours-holder">
+                            <ul>
+                                <li class="business-days-list " id="setup-business-mo" data-key="mo">
+                                    <span class="day-label">Segunda</span>
+                                    <span class="day-toggle">
+                                        <div class="slider_holder staffhours sliderdone" id="setup-business-day-1">
+                                        <input type="hidden" class="sliderVal" value="yes"><span class="slider_off sliders"> OFF </span><span class="slider_on sliders"> ON </span><span class="slider_switch"></span></div>
+                                    </span>            
+                                <div class="non-working-day hide">                
+                                    <label class="non-working-label"> Fechado para negócios</label>
+                                </div>
+                                    <div class="business-hours-drpdwn-holder fl hour-dropdown show">
+                                        <div class="btn-group ">
+                                            <input type="time" class="form-control setup-hours-start-time" name="horario[0]" id="startTime" data-key="mo">
+                                        </div>
+                                        <span class="staff-hours-to">to</span>
+                                        <div class="btn-group ">
+                                            <input type="time" class="form-control setup-hours-end-time" name="horario[0]" id="endTime" data-key="mo">
+                                        </div>
+                                    </div> 
+                                    <div id="applyToAll" data-key="mo" class="apply-to-all">Aplicar para todos</div>
+                                    <div class="clearfix"></div>
+                                </li>
+                    
+                                <li class="business-days-list " id="setup-business-tu" data-key="tu">
+                                    <span class="day-label">Terça</span>
+                                    <span class="day-toggle">
+                                        <div class="slider_holder staffhours sliderdone" id="setup-business-day-2">
+                                        <input type="hidden" class="sliderVal" value="yes"><span class="slider_off sliders"> OFF </span><span class="slider_on sliders"> ON </span><span class="slider_switch"></span></div>
+                                    </span>
+                                
+                                <div class="non-working-day hide">
+                                    <label class="non-working-label"> Fechado para negócios</label>
+                                </div>
+                                    <div class="business-hours-drpdwn-holder fl hour-dropdown show">
+                                        <div class="btn-group ">
+                                            <input type="time" class="form-control setup-hours-start-time" name="horario[0]" id="startTime" data-key="tu">
+                                        </div>
+                                        <span class="staff-hours-to">to</span>
+                                        <div class="btn-group ">
+                                            <input type="time" class="form-control setup-hours-end-time" name="horario[0]" id="endTime" data-key="tu">
+                                        </div>
+                                    </div> 
+                                    <div class="clearfix"></div>
+                                </li>
+                    
+                                <li class="business-days-list " id="setup-business-we" data-key="we">
+                                    <span class="day-label">Quarta</span>
+                                    <span class="day-toggle">
+                                        <div class="slider_holder staffhours sliderdone" id="setup-business-day-3">
+                                        <input type="hidden" class="sliderVal" value="yes"><span class="slider_off sliders"> OFF </span><span class="slider_on sliders"> ON </span><span class="slider_switch"></span></div>
+                                    </span>
+                                
+                                <div class="non-working-day hide">
+                                    <label class="non-working-label"> Fechado para negócios</label>
+                                </div>
+                                    <div class="business-hours-drpdwn-holder fl hour-dropdown show">
+                                        <div class="btn-group ">
+                                            <input type="time" class="form-control setup-hours-start-time" name="horario[0]" id="startTime" data-key="we">
+                                        </div>
+                                        <span class="staff-hours-to">to</span>
+                                        <div class="btn-group">
+                                            <input type="time" class="form-control setup-hours-end-time" name="horario[0]" id="endTime" data-key="we">
+                                        </div>
+                                    </div> 
+                                    <div class="clearfix"></div>
+                                </li>
+                    
+                                <li class="business-days-list " id="setup-business-th" data-key="th">
+                                    <span class="day-label">Quinta</span>
+                                    <span class="day-toggle">
+                                        <div class="slider_holder staffhours sliderdone" id="setup-business-day-4">
+                                        <input type="hidden" class="sliderVal" value="yes"><span class="slider_off sliders"> OFF </span><span class="slider_on sliders"> ON </span><span class="slider_switch"></span></div>
+                                    </span>
+                                
+                                <div class="non-working-day hide">
+                                    <label class="non-working-label"> Fechado para negócios</label>
+                                </div>
+                                    <div class="business-hours-drpdwn-holder fl hour-dropdown show">
+                                        <div class="btn-group ">
+                                            <input type="time" class="form-control setup-hours-start-time" name="horario[0]" id="startTime" data-key="th">
+                                        </div>
+                                        <span class="staff-hours-to">to</span>
+                                        <div class="btn-group ">
+                                            <input type="time" class="form-control setup-hours-end-time" name="horario[0]" id="endTime" data-key="th">
+                                        </div>
+                                    </div> 
+                                    <div class="clearfix"></div>
+                                </li>
+                    
+                                <li class="business-days-list " id="setup-business-fr" data-key="fr">
+                                    <span class="day-label">Sexta</span>
+                                    <span class="day-toggle">
+                                        <div class="slider_holder staffhours sliderdone" id="setup-business-day-5">
+                                        <input type="hidden" class="sliderVal" value="yes"><span class="slider_off sliders"> OFF </span><span class="slider_on sliders"> ON </span><span class="slider_switch"></span></div>
+                                    </span>
+                                
+                                <div class="non-working-day hide">
+                                    <label class="non-working-label"> Fechado para negócios</label>
+                                </div>
+                                    <div class="business-hours-drpdwn-holder fl hour-dropdown show">
+                                        <div class="btn-group ">
+                                            <input type="time" class="form-control setup-hours-start-time" name="horario[0]" id="startTime" data-key="fr">
+                                        </div>
+                                        <span class="staff-hours-to">to</span>
+                                        <div class="btn-group ">
+                                            <input type="time" class="form-control setup-hours-end-time" name="horario[0]" id="endTime" data-key="fr">
+                                        </div>
+                                    </div> 
+                                    <div class="clearfix"></div>
+                                </li>
+                    
+                                <li class="business-days-list setup-day-off" id="setup-business-sa" data-key="sa">
+                                    <span class="day-label">Sábado</span>
+                                    <span class="day-toggle">
+                                        <div class="slider_holder staffhours sliderdone" id="setup-business-day-6">
+                                        <input type="hidden" class="sliderVal" value="no"><span class="slider_off sliders" style="left: 1px;"> OFF </span><span class="slider_on sliders" style="left: -57px;"> ON </span><span class="slider_switch" style="left: 1px;"></span></div>
+                                    </span>
+                                
+                                <div class="non-working-day show">
+                                    <label class="non-working-label"> Fechado para negócios</label>
+                                </div>
+                                    <div class="business-hours-drpdwn-holder fl hour-dropdown hide">
+                                        <div class="btn-group ">
+                                            <input type="time" class="form-control setup-hours-start-time" name="horario[0]" id="startTime" data-key="sa">
+                                        </div>
+                                        <span class="staff-hours-to">to</span>
+                                        <div class="btn-group ">
+                                            <input type="time" class="form-control setup-hours-end-time" name="horario[0]" id="endTime" data-key="sa">
+                                        </div>
+                                    </div> 
+                                    <div class="clearfix"></div>
+                                </li>
+                    
+                                <li class="business-days-list setup-day-off" id="setup-business-su" data-key="su">
+                                    <span class="day-label">Domingo</span>
+                                    <span class="day-toggle">
+                                        <div class="slider_holder staffhours sliderdone" id="setup-business-day-0">
+                                        <input type="hidden" class="sliderVal" value="no"><span class="slider_off sliders" style="left: 1px;"> OFF </span><span class="slider_on sliders" style="left: -57px;"> ON </span><span class="slider_switch" style="left: 1px;"></span></div>
+                                    </span>
+                                
+                                <div class="non-working-day show">
+                                    <label class="non-working-label"> Fechado para negócios</label>
+                                </div>
+                                    <div class="business-hours-drpdwn-holder fl hour-dropdown hide">
+                                        <div class="btn-group ">
+                                            <input type="time" class="form-control setup-hours-start-time" name="horario[0]" id="startTime" data-key="su">
+                                        </div>
+                                        <span class="staff-hours-to">to</span>
+                                        <div class="btn-group ">
+                                            <input type="time" class="form-control setup-hours-end-time" name="horario[0]" id="endTime" data-key="su">
+                                        </div>
+                                    </div> 
+                                    <div class="clearfix"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>                
+            </div>            
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 mx-auto my-auto btn mb-5 mx-auto my-auto">
+            <input type="button" onclick="adicionarHorario()" value="Adicionar" class="btn btn-primary btn-lg"/>
+        </div>  
+
+        <!-- cadastro horários funcionários-->
+        <div class="col-auto form-horizontal">
+            <div class="d-flex bd-highlight mb-3">
+                <div class="me-auto p-2 bd-highlight"><h3 class="text-themecolor">Cadastro - Horário dos funcionários</div>           
+            </div>
+            <div class="table-responsive table-obs">
+                <table class="table table-bordered table-striped table-highlight">
+                    <thead>
+                    <div class="row">
+                        <th class="col-xs-1">Data</th>
+                        <th class="col-xs-2">Ínicio Expediente</th>
+                        <th class="col-xs-2">Fim Expediente</th>
+                        <th class="col-xs-3">Funcionário</th>
+                        <th class="col-xs-6">Departamento/Obsercações</th>
+                    </div>
+                    </thead>
+                    <tbody id="tabelaCorpo">
+                        <tr id="linhaParaClonar">   
+                            <td><input type="date" class="form-control" name="data[0]"></td>
+                            <td><input type="time" class="form-control" name="horario[0]"></td>
+                            <td><input type="time" class="form-control" name="horario2[0]"></td>
+                            <td><select class="form-control" name="funcionario_v[0]" placeholder="selecione o funcionário" id="funcionarioV">
+                                <option value="funcionarioV"></option>                                                 
+                            </td>
+                            <td><input type="text" class="form-control " name="obs[0]"></td>
+                            <td>
+                                <input type="button" onclick="removerLinha(this)" class="btnX btn btn-danger" value="Excluir">
+                                <input type="button" onclick="adicionarLinha()" value="Adicionar" class="btn btn-success"/>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>        
+    </div>    
+</div>
+
+
+
+
+
+
+
+{% endblock %}
+
+{% block js %}
+
+{% endblock %}
